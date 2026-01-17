@@ -1,0 +1,101 @@
+/* Search Modal Styles */
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modalWrapper {
+  display: flex;
+  background-color: rgb(12, 16, 20);
+  border: 1px solid rgb(39, 44, 49);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0 20px 20px 0;
+  /* padding: 20px; */
+  max-width: 500px;
+  width: 90%;
+  height: 100vh;
+  position: sticky;
+  overflow-y: auto;
+}
+
+/* Search Modal Content */
+
+.searchHeader {
+  margin: 24px 0 0 24px;
+}
+
+/* Recent */
+
+.recent {
+  padding-top: 12px;
+}
+
+.recentHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 24px 6px 24px;
+  padding-top: 4px;
+}
+
+.recentTitle {
+  font-size: 16px;
+}
+
+.clearAllButton {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(0, 149, 246);
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.recentList {
+  display: flex;
+}
+
+.recentListItem {
+  width: 100%;
+  padding: 8px 24px 8px 24px;
+
+  &:hover {
+    background-color: rgb(29, 33, 36);
+    cursor: pointer;
+  }
+}
+
+.recentListItemLink {
+  display: flex;
+}
+
+.recentListItemDeleteButton {
+  margin-left: auto;
+  color: rgb(142, 142, 142);
+  font-size: 28px;
+  font-weight: 100;
+
+  &:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+}
+
+.recentListItemAvatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+}
+
+.recentListItemDescription {
+  margin-left: 12px;
+}
+
+.recentListItem {
+  padding-top: 8px;
+}

@@ -1,0 +1,164 @@
+/* Navigation */
+
+a {
+  cursor: pointer;
+}
+
+.navigation {
+  width: 16%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.navigationSearchModal {
+  .navigation {
+    width: 8%;
+  }
+
+  .navList {
+    width: fit-content;
+  }
+
+  .navItem {
+    width: fit-content;
+  }
+
+  .navItemLinkText {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .navItemLogoText {
+    display: none;
+  }
+}
+
+.navigationDirect {
+  .navigation {
+    width: 8%;
+  }
+
+  .navItemLinkText {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .navItemLogoText {
+    display: none;
+  }
+
+  .navItemAvatar {
+    display: none;
+  }
+
+  @media screen and (max-width: 750px) {
+    .navigation {
+      display: none;
+    }
+  }
+}
+
+.navigation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 100vh;
+  background-color: gray;
+  z-index: -1;
+}
+
+.navListHeaderImg {
+  width: 55%;
+}
+
+.navList {
+  padding: 15px;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in;
+}
+
+.navItem:hover {
+  background-color: rgba(128, 128, 128, 0.195);
+}
+
+.navItemLogoText:hover {
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.navItemLink {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+
+.navItemLinkText {
+  padding-left: 16px;
+}
+
+.navItemImgAvatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+}
+
+.navListMore {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+}
+
+.navItemLinkBtn {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1290px) {
+  .navigation {
+    width: 8%;
+  }
+
+  .navItemLinkText {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .navItemLogoText {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 790px) {
+  .navigation {
+    width: 11%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navigation {
+    display: none;
+  }
+}

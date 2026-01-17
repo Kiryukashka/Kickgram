@@ -1,0 +1,30 @@
+/* Stories */
+
+.storiesList {
+  width: 470px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  /* scrollbar-width: none; */
+  scrollbar-color: transparent transparent;
+}
+
+.storiesUser {
+  /* border: 4px solid rgba(128, 128, 128, 0.314); */
+  border: 4px solid rgb(201, 14, 133);
+  border-radius: 50px;
+}
+
+.storiesUserImg {
+  padding: 5px;
+  display: flex;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 470px) {
+  .storiesList {
+    width: auto;
+  }
+}

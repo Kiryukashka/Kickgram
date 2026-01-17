@@ -1,0 +1,50 @@
+export const NAVIGATION = [
+  {
+    id: 1,
+    type: 'link',
+    img: '/public/nav-img/nav-img-svg/home.svg',
+    imgActive: '/public/nav-img/nav-img-svg/home-active.svg',
+    text: 'Головна',
+    to: '/',
+  },
+  {
+    id: 2,
+    type: 'button',
+    img: '/public/nav-img/nav-img-svg/search.svg',
+    text: 'Пошук',
+    action: 'openSearchModal',
+  },
+  {
+    id: 3,
+    type: 'link',
+    img: '/public/nav-img/nav-img-svg/intersting.svg',
+    text: 'Цікаве',
+    to: '/explore',
+  },
+  // {
+  //   id: 4,
+  //   type: 'link',
+  //   img: '/public/nav-img/nav-img-svg/reels.svg',
+  //   text: 'Reels',
+  // },
+  {
+    id: 4,
+    type: 'link',
+    img: '/public/nav-img/nav-img-svg/massage.svg',
+    text: 'Повідомлення',
+    to: '/direct/inbox',
+  },
+  {
+    id: 5,
+    type: 'button',
+    img: '/public/nav-img/nav-img-svg/notification.svg',
+    text: 'Сповіщення',
+  },
+  {
+    id: 6,
+    type: 'button',
+    img: '/public/nav-img/nav-img-svg/create.svg',
+    text: 'Створити',
+    action: 'openCreateModal',
+  },
+]

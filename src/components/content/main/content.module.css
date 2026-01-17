@@ -1,0 +1,150 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  max-width: 500px;
+}
+
+.post {
+  margin-top: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid gray;
+}
+
+.userGetProfile {
+  width: 470px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.getUserAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.userGetProfile::after {
+  content: '...';
+  font-size: 20px;
+  margin-left: auto;
+}
+
+.postContent {
+  width: 100%;
+  max-width: 470px;
+}
+
+.postContentImg {
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 100%;
+  max-width: 470px;
+}
+
+.hotbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+}
+
+.hotbarImg {
+  margin-top: 10px;
+  width: 30px;
+}
+
+.hotbarBtn {
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s ease-in;
+}
+
+.hotbarBtn:hover {
+  transform: scale(1.07);
+}
+
+.hotbarBtnSave {
+  margin-left: auto;
+}
+
+.postContentLike {
+  margin-top: 5px;
+}
+
+.like {
+  font-size: 14px;
+}
+
+.opisAvtora {
+  margin-top: 10px;
+}
+
+.opisAvtoraTxt {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.nameAvtor {
+  font-weight: normal;
+}
+
+.postComents {
+  margin-top: 10px;
+}
+
+.postComentsBtn {
+  color: gray;
+  font-size: 14px;
+}
+
+.createComents {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.crateComentsInput {
+  font-size: 15px;
+}
+
+.crateComentsInput:focus {
+  outline: none;
+  color: white;
+}
+
+@media screen and (max-width: 760px) {
+  .userGetProfile {
+    width: auto;
+  }
+  
+  .userGetProfile::after {
+    writing-mode: vertical-lr;
+  }
+
+  .hotbar {
+    padding: 0 10px;
+  }
+
+  .postDescription {
+    padding: 0 10px;
+  }
+}
+
+/* @media screen and (max-width: 375px) {
+  .userGetProfile {
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .userGetProfile {
+    width: 320px;
+  }
+} */

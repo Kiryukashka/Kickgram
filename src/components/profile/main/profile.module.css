@@ -1,0 +1,18 @@
+/* Header */
+
+.wrapper {
+  max-width: 935px;
+}
+
+.header {
+  margin: 0 223px;
+  padding: 30px 20px;
+}
+
+/* Haeder Avatar */
+
+.headerProfileAvatarImg {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}

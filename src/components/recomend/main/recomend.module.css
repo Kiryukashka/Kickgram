@@ -1,0 +1,93 @@
+/* Recomend */
+
+.recomend {
+  padding: 2% 0;
+  width: 20%;
+}
+
+.getUserProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.getUserInfo {
+  display: flex;
+  align-items: center;
+}
+
+.getUserAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.getUserName {
+  margin-left: 10px;
+}
+
+.getUserProfileLink {
+  color: blue;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  margin-left: auto;
+}
+
+.getUserProfileLink:hover {
+  color: rgb(65, 65, 254);
+  text-decoration: underline;
+}
+
+.recomendForUser {
+  margin-top: 24px;
+  padding-bottom: 24px;
+}
+
+.recomendForUserMore {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recomendForUserText {
+  font-size: 13px;
+  font-weight: 600;
+  color: gray;
+}
+
+.recomendForUserMoreLink {
+  font-size: 13px;
+}
+
+.recomendForUserMoreLink:hover {
+  color: gray;
+}
+
+.recomendUser {
+  padding: 16px 8px;
+}
+
+.opisUserRecomend {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+  margin-left: 10px;
+}
+
+.subscribeUser {
+  color: blue;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  margin-left: auto;
+}
+
+.subscribeUser:hover {
+  color: rgb(56, 56, 251);
+}
+
+@media screen and (max-width: 1290px) {
+  .recomend {
+    display: none;
+  }
+}

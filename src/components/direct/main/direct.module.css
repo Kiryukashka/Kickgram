@@ -1,0 +1,237 @@
+.directContainer {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.directUserSection {
+  position: relative;
+  border-right: 1px solid gray;
+  height: 100vh;
+}
+
+/* Direct Header */
+
+.directUserHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 24px;
+}
+
+.directChangeUser {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.directUserName {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Search Chat */
+
+.directSearchSection {
+  padding: 0 16px;
+  margin-bottom: 20px;
+}
+
+.directSearchInput {
+  width: 100%;
+  padding: 16px 50px;
+  border-radius: 50px;
+  background-color: rgb(37, 41, 46);
+  border: none;
+  background-image: url('/public/nav-img/nav-img-svg/search.svg');
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 16px;
+}
+
+/* Notes */
+
+.directUsersNotes {
+  display: flex;
+}
+
+.directUsersNotesItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 24px;
+}
+
+.directUsersNotesCreateImg {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+}
+
+.directUsersNotesCreate {
+  position: absolute;
+  z-index: 1;
+  top: 16%;
+  width: 65px;
+  height: 35px;
+  padding: 5px 8px;
+  background-color: rgb(37, 41, 46);
+  border-radius: 10px;
+  box-shadow: 3px 1px 2px 2px rgb(7, 7, 7);
+}
+
+.directUsersNotesCreate::placeholder {
+  font-size: 11px;
+}
+
+.directUsersNotes::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(37, 41, 46);
+  border-radius: 50px;
+  top: 19%;
+  left: 7%;
+}
+
+.directUsersNotes::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(37, 41, 46);
+  border-radius: 50px;
+  top: 20.3%;
+  left: 9.5%;
+}
+
+/* All Massage Text */
+
+.directAllMasageText {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+
+  a {
+    color: gray;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 750px) {
+      .navigation {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Direct Chats */
+
+.directMassage {
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+
+.directMassageUserAvatar {
+  width: 67px;
+  height: 55px;
+  border-radius: 50px;
+}
+
+.directMassageListItem:hover {
+  background-color: rgba(128, 128, 128, 0.295);
+}
+
+.directMassageListItemLink {
+  padding: 8px 24px;
+  display: flex;
+}
+
+.directMassageUserAvatar {
+  margin-right: 12px;
+}
+
+.directMassageUser {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.directMassageUserName {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.directMassageUserText {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Chat */
+
+.directChat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.directChatBigImgContainer {
+  width: 100%;
+}
+
+.directChatTitleContainer {
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.directChatDescriptionContainer {
+  padding-top: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.directChatBtnContainer {
+  padding-top: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.directChatBigImg {
+  width: 95px;
+  height: 96px;
+}
+
+.directChatTitle {
+  font-weight: 400;
+}
+
+.directChatDescription {
+  font-size: 14px;
+  color: gray;
+}
+
+.directChatBtn {
+  background-color: rgb(74, 93, 249);
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
+.directChatBtn:hover {
+  background-color: rgb(60, 83, 255);
+}
